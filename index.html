@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- HTML Essentials -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Little Dragon</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- fonts used in the site-->
+    <link href="https://fonts.googleapis.com/css2?family=Spicy+Rice&display=swap" rel="stylesheet">
+
+    <!-- Glide.js CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@glidejs/glide/dist/css/glide.core.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@glidejs/glide/dist/css/glide.theme.min.css">
+
+    <!-- Glide.js JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide/dist/glide.min.js"></script>
+
+    <!-- link to the icon css-->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <!-- add a favicon-->
+    <link rel="icon" type="image/png" href="img/icon.png">
+
+     <!-- add the map API-->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+</head>
+<body>
+    <header>
+        <nav class="nav">
+            <img class="second-logo" src="img/logo.png" alt="Second Logo">
+            <div class="button-list">
+                <a class="nav-button" href="#info-div">Meer Info</a>
+                <a class="nav-button" href="#location-div">Locaties</a>
+                <a class="nav-button" href="#media-div">Media</a>
+                <button class="nav-button">Contact</button>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="logos">
+        </section>
+
+        <section class="hero-banner">
+            <h2>Laat de DRAAK <br> in je los!</h2>
+        </section>
+
+        <aside class="sidebar">
+            <img class="logo" src="img/logoicon.png" alt="Logo">
+        </aside>
+        <div class="image-container" id="media-div">
+            <div class="glide">
+                <div data-glide-el="track" class="glide__track">
+                    <ul class="glide__slides">
+                        <img class="glide__slide slide" src="https://images.pexels.com/photos/7045758/pexels-photo-7045758.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"></img>
+                        <img class="glide__slide slide" src="https://images.pexels.com/photos/62376/pexels-photo-62376.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"></img>
+                        <img class="glide__slide slide" src="https://images.pexels.com/photos/7045391/pexels-photo-7045391.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"></img>
+                        <img class="glide__slide slide" src="https://images.pexels.com/photos/7045754/pexels-photo-7045754.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"></img>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="popups">
+            <img class="glide-popup" id="glide-popup" src="https://images.pexels.com/photos/7045758/pexels-photo-7045758.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2">
+        </div>
+        <h2 class="info-title">Lil' Dragon voor de leraar of sportschoolhouder</h2>
+        <div class="info-div" id="info-div">
+            <div class="info">
+                <p class="info-text"><i class='checkmark bx bx-check'></i> Een uniform concept uitgerold over Nederland.</p>
+                <p class="info-text"><i class='checkmark bx bx-check' ></i> Een compleet pakket met lesvoorbereidingen met toch de mogelijkheid voor eigen inbreng in de lessen.</p>
+                <p class="info-text"><i class='checkmark bx bx-check' ></i> Een compleet pakket met lesmaterialen (Gi’s, blockers, pads, wave master).</p>
+                <p class="info-text"><i class='checkmark bx bx-check' ></i> Een compleet pakket met lesondersteuning (brief ouders, kleurplaten).</p>
+                <p class="info-text"><i class='checkmark bx bx-check' ></i> Een compleet pakket met marketing (flyers, kleurboeken, certificaten, tassen en andere merchandising).</p>
+                <p class="info-text"><i class='checkmark bx bx-check' ></i> Ondersteuning door Nederlandse importeur (clinics, leraar trainingen).</p>
+            </div>
+            <div class="more-info">
+                <img class="info-image" src="img/dragon-schop.png">
+                <button class="more-info-button"><i class='bx bx-info-circle' ></i> Meer Informatie</button>
+            </div>
+        </div>
+        <h2 class="info-title">Locaties</h2>
+        <div class="locations" id="location-div">
+            <div id="map" class="map"></div>
+            <div class="map-side-bar">
+                <h3 class="location-top location-side-bar-text" id="location-name">Onbekend</h3>
+                <p class="location-side-bar-text" id="location-adress">Onbekend</p>
+            </div>
+        </div>
+        <div class="space-between"></div>
+    </main>
+    <footer>
+        <img class="footer-logo" src="img/Logo.png" alt="footer image">
+        <div class="contactgegevens">
+            <p class="contact"><i class='bx bx-map'></i>: Gymzaal Wandelakker 64-66 Breda</p>
+            <p class="contact"><i class='bx bx-phone-call'></i>: 06-25563876</p>
+            <p class="contact"><i class='bx bx-envelope'></i>: info@lildragon.nl</p>
+            <p class="adress contact">@: Priemkruid 134 4823 NA Breda</p>
+        </div>
+    </footer>
+    <script src="glidescript.js"></script>
+    <script src="Leafletmap.js"></script>
+</body>
+</html>
