@@ -346,11 +346,458 @@ footer {
     color:#ffffff;
 }
 
+:root {
+    --maincolor: whitesmoke;
+    --headercolor: #9264AF;
+    --nav-color: whitesmoke;
+    --sidebar-color: #9264AF;
+    --special-color: #9264AF;
+    --button-color1: #9264AF;
+    --line-color: #9264AF;
+    --transparant-purple: #9264af1c;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* Container */
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+
+/* header */
+
+.second-logo {
+    width: auto;
+    height: 100%;
+    margin-right: 5%;
+    cursor: pointer;
+}
+
+.nav {
+    display: flex;
+    position: relative;
+    height: 5vh;
+    width: 100%;
+    padding-left: 5%;
+    background-color: var(--nav-color);
+    padding-top: 0.8vh;
+    padding-bottom: 1vh;
+    z-index: 30;
+}
+
+.button-list {
+    display: flex;
+    margin-bottom: 1.8vh;
+}
+
+.nav-button {
+    display: flex;
+    width: 9vw;
+    height: 30%;
+    cursor: pointer;
+    border: none;
+    text-align: center;
+    justify-content: center;
+    align-self: center;
+    font-size: 2.3vh;
+    background: none;
+    text-decoration: none;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.nav-button:hover {
+    text-decoration: underline;
+    color: #9264AF;
+    font-weight: 700;
+}
+
+/* intro */
+.intro {
+    background-color: #9264AF;
+    color:white;
+    margin-top:7.5em;
+    padding:2em;
+    border-radius:2em;
+}
+h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 2em;
+    text-align: center;
+    padding-bottom: 0.6em;
+    color: #8BC63F;
+    padding-left:10%;
+    padding-right:10%;
+}
+
+.h2-body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2em;
+    text-align: center;
+}
+.intro-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Begin verwachtingen docenten */
+
+.verwachtingen-docenten {
+    font-family: Arial, Helvetica, sans-serif;
+    width: 50%;
+    padding:5%;
+}
+
+.verwachtingendocenten-title {
+    font-weight: 700;
+    font-size: 1.2em;
+    text-align: center;
+}
+
+.verwachtingen-li {
+    text-align: center;
+}
+
+/* Begin Duurdocenten training uitleg */
+.docenten-info {
+    width: 50%;
+    margin: 0 auto;
+    padding: 5%;
+}
+
+.duur-docenten,
+.docententraining {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+.duurdocenten-title,
+.verwachtingendocenten-title {
+    font-weight: 700;
+    font-size: 1.2em;
+    color:#8BC63F;
+    margin-bottom:1em;
+}
+
+/* programma section */
+.programma {
+    padding: 3em;
+}
+
+/* uitleg lil dragon programma */
+.lildragon-uitleg {
+    padding-top: 5em;
+
+}
+
+/* positionering programma onderdelen */
+.programma-boven,
+.programma-onder {
+    display: flex;
+}
+
+.uitleg-lildragon-title {
+    font-family: 'Spicy Rice', cursive;
+    color: #8BC63F;
+    text-shadow: 2px 2px 3px var(--headercolor);
+    -webkit-text-stroke: 1px black;
+    font-size: 6vh;
+    text-align: center;
+    border-radius: 2em;
+}
+
+.uitleg-lildragon-body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+    width: 80%;
+    padding-top: 0.6em;
+    line-height: 1.5em;
+    text-align: center;
+    margin: 0 auto;
+}
+
+/* info programma duur en over programma */
+.duur-programma,
+.trainingsprogramma,
+.pakket,
+.examens {
+    width: 40%;
+    padding:2em;
+    border-radius: 1em;
+    margin: 1.5em auto;
+    background-color: #9264AF;
+}
+
+.duur-title,
+.trainingsprogramma-title,
+.pakket-title,
+.examens-title {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    font-size: 1.2em;
+    padding-top: 0.6em;
+    padding-bottom: 0.6em;
+    color: #8BC63F;
+}
+
+.duur-body,
+.trainingsprogramma-body,
+.pakket-body,
+.examens-body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+
+}
+
+.trainingsprogramma {
+    width: 40%;
+}
+
+/* Begin Skills */
+.skills {
+    display: flex;
+    gap:5%;
+    align-items: center;
+    justify-content: center;
+}
+/* cards */
+.card {
+    background-color: #9264AF;
+    color:#ffffff;
+    border-radius:2em;
+    width: 40vw;
+    height: 40vh;
+    margin: 5%;
+    padding:5%;
+}
+
+.lifeskills-title {
+    font-family: 'Spicy Rice', cursive;
+    color: #8BC63F;
+    text-shadow: 2px 2px 3px var(--headercolor);
+    -webkit-text-stroke: 1px black;
+    font-size: 3.5vh;
+    text-align: left;
+    margin-bottom: 1.0em;
+    display: inline-block;
+    padding-top:0.5em;
+    padding-bottom:0.5em;
+    border-radius: 1em;
+    margin-left:28.2344px;
+}
+
+.lifeskills-body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    text-align: left;
+}
+
+.lifeskills-opsomming-title {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    padding-top: 1em;
+}
+
+.lifeskills-opsomming {
+    font-family: Arial, Helvetica, sans-serif;
+    padding-top: 1.3em;
+    padding-left: 1.2em;
+}
+
+.lifeskillsopsomming-body {
+    padding-top: 0.3em;
+    padding-bottom: 0.3em;
+}
+
+/* Begin Safetyskills */
+
+.safetyskills {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.safetyskills-title {
+    font-family: 'Spicy Rice', cursive;
+    color: #8BC63F;
+    text-shadow: 2px 2px 3px var(--headercolor);
+    -webkit-text-stroke:  1px black;
+    font-size: 3.5vh;
+    margin-bottom: 1em;
+    display: inline-block;
+    padding-left:1em;
+    padding-right:1em;
+    padding-top:0.5em;
+    padding-bottom:0.5em;
+    border-radius: 1em;
+}
+
+.safetyskills-opsomming-title {
+    font-weight: 700;
+    padding-top: 1em;
+}
+
+.safetyskills-opsomming {
+    padding-right: 1.2em;
+    padding-top: 1.3em;
+}
+
+.safetyskills-body {
+    padding-top: 0.3em;
+    padding-bottom: 0.3em;
+    list-style-position: inside;
+}
+
+footer {
+    display: flex;
+    height: 30vh;
+    width: 100%;
+    background-color: #9264AF;
+    border-top: 1vh solid #8BC63F;
+    justify-content: space-around;
+}
+/* footer */
+.footer-logo {
+    margin-top: 3%;
+    width: auto;
+    height: 50%;
+}
+
+.adress {
+    margin-top: 500vh;
+}
+
+.contactgegevens {
+    width: auto;
+    margin-top: 2%;
+}
+
+.contact {
+    font-weight: 550;
+    color: var(--maincolor);
+    margin-top: 2vh;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.duur-body,
+.trainingsprogramma-body,
+.pakket-body,
+.examens-body {
+    color:#ffffff;
+}
+
 @media only screen and (max-width: 600px) {
-    .container {
-        width: 100%;
-        margin: 0 auto;
-        background-color: red;
+/* text /
+    h2 {
+        font-size: ;
+    }
+    .verwachtingendocenten-title {
+        font-size: ;
+    }
+    .verwachtingen-li {
+        font-size: ;
+    }
+    .duurdocenten-title {
+        font-size: ;
+    }
+    .docenten-body {
+        font-size: ;
     }
 
+    .uitleg-lildragon-title {
+        font-size: ;
+    }
+    .uitleg-lildragon-body {
+        font-size: ;
+    }
+    .lifeskills-title {
+        font-size: ;
+        margin-left:0em;
+    }
+    .safetyskills-title {
+        font-size: ;
+        margin-bottom:0em;
+        }
+
+
+/ intro /
+    .intro {
+        margin-top:0;
+        border-radius: 0;
+        border-bottom-left-radius: 2em;
+        border-bottom-right-radius:2em;
+    }
+    .intro-card {
+        display: block;
+    }
+    .verwachtingen-docenten {
+        padding: 0;
+        margin:0 auto;
+        width:90%;
+    }
+    .docenten-info {
+        width: 90%;
+    }
+/ wat is lil dragon /
+    .programma-boven,
+    .programma-onder {
+        display:block;
+    }
+    .duur-programma,
+    .trainingsprogramma,
+    .pakket,
+    .examens {
+        width:90%;
+    }
+/ skills */
+    .skills {
+        display: block;
+        text-align: center;
+    }
+    .life-skills {
+        margin:0 auto;
+    }
+    .card {
+        width:90%;
+        height:17em;
+    }
+
+        .button-list {
+        gap: 5vw;
+        margin: 0 auto;
+    }
+
+    .nav-button {
+        width: 10vw;
+        height: 4vh;
+    }
+
+    .second-logo {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 660px) {
+    footer {
+        flex-direction: column;
+        height: 60vh;
+    }
+
+    .contactgegevens {
+        text-align: center;
+    }
+
+    .footer-logo {
+        height: 14vh;
+        width: 80%;
+        margin: 0 auto;
+    }
 }
